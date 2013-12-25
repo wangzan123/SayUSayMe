@@ -1,0 +1,271 @@
+﻿*{margin:0px;padding:0px;}
+a
+{
+	text-decoration:none;
+	
+}
+a:hover
+{
+	text-decoration:none;
+	/*color:Red;*/
+}
+a:visited 
+{
+	color:Blue;
+	}
+ /*body
+/*{
+	background-color: #FFFFFF;
+}*/
+/*{ background-image:url(../../image/background.png);}*/*/
+
+#allPage
+{
+	margin: 2px auto;
+	width: 950px;
+	border: 1px solid #CAC4C5;
+	position: relative;
+	background-color: white;
+}
+
+/*页面上部分样式*/
+
+/*网页内容首部导航信息*/	
+#pageHead
+{
+	border-bottom: 1px solid;
+	height: 167px;
+	background-image: url(../../image/banner4.jpg);
+	background-repeat: no-repeat;
+	width: 100%;
+	border-bottom-style: none;
+}
+
+
+
+/*头部内容部分*/
+#allPage #contentHead{background-image:url(../../image/topichot.gif); height:30px; background-repeat:no-repeat; background-position:left;}
+#allPage #contentHead #headText{margin:10px 0px 10px 20px;}
+/*结束页面上部分*/
+
+
+/*页面内容部分,最新信息显示部分*/
+/*显示公告信息*/
+#allPage #showMessages
+{
+	height: 65px;
+	border-bottom: 2px solid #dfdfdf;
+	border-style: none;
+	border-width: 1px;
+	border-color: inherit;
+} 
+#allPage #showMessages #announcedText{ height:25px; margin:0px 0px 0px 10px;background-image:url(../../image/ann_icon.gif);background-repeat:no-repeat; background-position:left top;}
+#allPage #showMessages #operation{position:relative; padding:6px 0px 2px 10px;height:35px; border-bottom:1px solid #cccccc; background-image:url(../../image/headdd.gif); background-repeat:repeat; background-position:left; }
+#allPage #showMessages #operation #operationText{ margin:-17px 0px 0px 116px;}
+#allPage #showMessages #operation #suggestion{float:right; margin:-24px 0px 0px 0px;}
+.suggestionDIV{ font-size:20px; border:1px solid black; position:relative; z-index:inherit;}
+
+/*以上为模板样式*/
+
+
+/*内容页样式*/
+/*显示新闻图片和最新帖子、新闻模块*/	
+#page #container #newsShow{height:320px;margin: 5px ;border-bottom:2px solid  #CCCCCC;}
+#page #container #newsShow #headTitle
+{
+	font-size: 13px;
+	font-weight: bold;
+	border-bottom: 1px dashed #CCCCCC;
+	padding-bottom: 5px; /*background-image: url(../../image/headdd.gif);*/
+	background-repeat: repeat-x;
+	background-position: left top;
+	padding: 10px;
+	background-color: #494949;
+	color: #FFFFFF;
+	border-bottom-style: none;
+}
+#page #container #newsShow #headTitle #headTitle1{margin-left:80px;}
+#page #container #newsShow #headTitle #headTitle2{margin-left:180px;}
+#page #container #newsShow #headTitle #headTitle3{margin-left:270px;}
+#page #container #newsShow #newShowTitle{background-repeat:repeat-x;margin:5px 10px;border-bottom:1px solid;background-color:Blue;}
+
+/*轮播图片控件*/
+#page #container #newsShow #flashPic {float:left;width:260px;height:322px; margin-top:15px;}
+#page #container #newsShow #flashPic #pic{border:10px solid; border-left-color:#CCCCCC; border-right-color:#CCCCCC;z-index:-100; border-bottom-color:#CCCCCC;border-top-color:#CCCCCC;}
+
+/*最新文章模块与最新回复*/
+#page #container #newsShow #newNote{width:660px;float:right;margin:10px 0px 10px 0px;height:342px;position:relative; z-index:-1;}
+/*最新文章模块*/
+#page #container #newsShow #newNote #newArticle{float:left;height:100%;width:260px;margin-left:10px;}
+#newsItemDiv{position:relative; border-bottom:1px dashed;width:280px;}
+#newsItemDiv #userName{color:Blue;float:right;}
+
+.newsItem{font-size:12px; line-height:25px;width:100%;}
+.newsItem a{text-decoration:none;}
+.newsItem a:hover{color:Red;}
+
+
+/*最新评论*/
+#page #container #newsShow #newNote #newComment{float:right;margin-right:20px;}
+#newCommentItemDiv{position:relative; border-bottom:1px dashed;width:280px;}
+#newCommentItemDiv #userName{color:Blue;float:right;}
+
+
+
+/*页面内容部分,模块显示部分*/
+#page #container #webBlock{}
+#page #container #webBlock #catalogTitle
+{
+	font-size: 12px;
+	font-weight: bolder;
+	color: white;
+	padding: 8px;
+	/*background-image: url(../../image/head.gif);*/
+	background-repeat: repeat-x;
+	background-position: left;
+	background-color: #494949;
+}
+#page #container #webBlock #catalogTitle #lastestPostText{float:right;margin:-20px 150px 0px 0px; font-size:12px; font-weight:bolder;}
+#page #container #webBlock #catalogTitle a{ color:White; text-decoration:none;}
+#page #container #webBlock #catalogTitle a:hover{ text-decoration:underline; color:Red;}
+#page #container #webBlock #catalogBlock{padding:12px 20px 12px 5px; border-bottom:1px dashed #CCCCCC;}
+#page #container #webBlock #catalogBlock a:hover{color:Red; }
+#page #container #webBlock #imgPlace img{height:32px;width:36px;}
+#page #container #webBlock #description{ margin:-22px 0px 0px 40px; width:500px;}
+#page #container #webBlock #description #descriptionWord{color:#5f5f5f; margin-top:2px; white-space:pre-wrap;}
+#page #container #webBlock #lastestArticle{position:relative; text-align:center;}
+#page #container #webBlock #lastestArticle #subject{margin:2px auto; text-align:center; white-space:nowrap;}
+#page #container #webBlock #lastestArticle #user{margin:2px auto;}
+#page #container #webBlock #lastestArticle #date{margin:2px auto;}
+/*模块样式*/
+
+
+
+
+
+/*显示某一分类的文章列表*/
+#warning{height:150px;font-size:30px; width:950px; border-bottom:1px solid #cdcdcd; }
+
+#warning #warningTitle{ padding:2px 0px 0px 0px;width:100%; font-size:12px; color:White; font-weight:bolder; height:20px; background-image:url(../../image/head.gif); background-repeat:repeat-x; background-position:left;}
+
+#warning #warningTitle span{margin-left:10px;}
+
+#articleBlock{height:auto;margin-bottom:10px; position:relative;}
+
+.ArticleItem{font-size:12px;padding:5px;border-bottom:1px solid;border-bottom-color:#cdcdcd;height:40px;width:98%;display:block;position:relative;}
+
+.ArticleItem .title a{color:#000000;text-decoration:none;}
+
+.articleBlockTitle{ border-bottom:1px solid #cccccc; padding:5px;padding-right:30px;font-size:12px;color:#000000;width:100%;height:20px;background-image:url(../../image/headdd.gif); background-repeat:repeat; background-position:left;}
+
+.articleBlockTitle #subject{float:left;padding:2px 0px 0px 10px; display:inline;}
+
+.articleBlockTitle #TitleWriter{margin:-18px 0px 0px 480px; clear:both;}
+
+.articleBlockTitle #lastestReply{margin:-12px 0px 0px 780px; clear:both;}
+
+.articleBlockTitle #replyAndClick{margin:-10px 0px 0px 619px; clear:both;}
+
+.ArticleItem .title a:hover{color:#00eeff;}
+
+.ArticleItem .replyData{margin:-13px 0px 0px 640px; clear:both;}
+
+.ArticleItem .userData{margin:-24px 0px 0px 80px; clear: left;padding:10px 10px;}
+
+.ArticleItem .lastReplyData{margin:-50px 0px 0px 700px; padding:0px 0px 10px 0px; clear:both;}
+
+.ArticleItem .ArticleSubject{float:left; margin:10px 0px 0px 0px;}
+
+.ArticleItem .userData .userName{display:block;font-size:10px;}
+
+.ArticleItem .userData .userName a:hover{text-decoration:underline;}
+
+.ArticleItem .userData .userName a{text-decoration:none;}
+	
+.ArticleItem .userData .date{font-size:10px;}
+
+/*页脚部分*/
+#footer{clear:both;padding:4px 0px;text-align:center; margin:10px auto 9px auto; 
+height:80px;
+}
+#footer ul li{list-style:none;display:inline;padding:3px 8px 2px 8px;border-right:1px solid;}
+#footer ul #last{border:0px;}
+#footer ul li a:hover{color:#FF0000;}
+#footer #we{margin-top:10px;}
+/*分页样式*/
+.pageFoot{ padding-bottom:15px;}
+.pageFoot .pageNumber{margin:-20px -65px 0px 0px; float:right; display:block; padding:8px;}
+.pageFoot .pageNumber span{border:1px solid #bfbfbf;padding:4px 8px; background-color:#efefef; margin-right:2px;}
+.pageFoot .pageNumber span a{font-size:15px; text-decoration:none; font-weight:bolder;}
+.pageFoot .pageNumber span:hover{border:1px solid #000099;}
+.pageFoot .operation{margin:5px 0px -5px 10px;}
+
+/*显示用户详细信息风格，用户图像等等*/
+.userDetails{float:left;width:120px;height:auto;position:relative;margin-left:5px;}
+
+.userDetails .UserDetailsName{font-size:12px;padding:5px 10px 2px 0px;margin:0px 0px 0px 0px;margin-bottom:5px;padding-bottom:2px;}
+
+.userDetails .UserDetailsPic{width:100px;height:120px;display:block; overflow:hidden;}
+.userDetails .UserDetailsPic img{width:100px;height:120px;}
+/*显示文章板块样式*/
+.ArticleBlock{ border-bottom:3px;border-bottom-style:double;border-bottom-color:Red;overflow:auto; background-color:#ffffff;}
+
+.ArticleDetails{float:right;width:824px;font-size:12px;border-left:1px solid;min-height:200px; background-position:left;}
+.ArticleDetails	.ArticleDetailsTitle{border-bottom:1px;border-bottom-style:dashed;padding:5px 10px 2px 10px;margin-top:8px;}
+.ArticleDetails .file{background-color:#ddffcc;margin:0px 0px 4px 0px; border:1px dashed #ff9900;}
+
+.ArticleDetails	.ArticleDetailsContent{font-size:12px;padding:5px 10px 2px 10px;background-color:White; min-height:200px;}
+
+.ArticleDetails #replyOperation{padding:6px 0px 6px 10px; border-top:1px solid #cccccc;}
+.ArticleDetails #replyOperation a{ text-decoration:none;}
+.ArticleDetails #replyOperation a:hover{ text-decoration:underline; color:Red;}
+.message span{font-size:12px;font-weight:bolder;margin:2px 10px;}
+.webEditorTable {border:1px solid #5f5f5f;}
+.webEditorTable td{border:1px solid #ffffff;}
+#webEditorOperator{float:right; margin:-15px 20px 0px 0px;}
+.webEditorTable td a{ text-decoration:none;}
+.webEditorTable td a:hover{ text-decoration:underline; color:Red;}
+/*下载页面的样式*/
+
+/*内容分类页面*/
+/*模块头部*/
+#download{font-size:13px;margin:0px 0px 0px 20px; min-height:50px;}
+.HeadStyle{width:700px; background-color:#bbccee;padding:3px;}
+.HeadStyle span a{text-decoration:none;font-size:15px;}
+.HeadStyle span a:hover{text-decoration:underline;color:#ff8822;}
+/*模块内容*/
+.ItemStyle{ line-height:30px;}
+.ItemStyle a{width:50px;padding:5px;text-decoration:underline;}
+.ItemStyle a:hover{color:#ffee00;}
+/*下载首页的领域分类页面*/
+/*模块头部*/
+.HeadStyle1{width:300px; background-color:#bbccee;padding:3px;}
+.HeadStyle2{width:300px; background-color:#ffcc00;padding:3px;}
+.HeadStyle1 span a{text-decoration:none;font-size:15px;}
+.HeadStyle1 span a:hover{text-decoration:underline;color:#ff8822;}
+.HeadStyle2 span a{text-decoration:none;font-size:15px;}
+.HeadStyle2 span a:hover{text-decoration:underline;color:#ff8822;}
+
+/*模块内容*/
+.ItemStyleDL{ line-height:30px;}
+.ItemStyleDL a{width:50px;padding:5px;text-decoration:none;}
+.ItemStyleDL a:hover{color:#ffee00; text-decoration:underline;}
+
+/*下载文件浏览页面风格*/
+.fileView{  border-bottom:1px solid black; font-size:15px;}
+.fileView #fileViewItems{margin:8px 8px 30px 8px;}
+.fileView #fileViewItems a:hover{color:Blue;}
+
+/*下载页面的样式*/
+.fileDownStyle{font-size:15px;}
+.fileDownStyle #fileDownLoad{margin:8px;}
+.fileDownStyle #fileDownLoad #title{font-weight:bolder;background-color:Blue;color:White; padding:4px 10px 4px 10px;margin-bottom:5px;}
+
+.linkButton{ padding:4px 8px; border:1px solid #ffbbaa; text-decoration:none;}
+/******************测试样式********************/
+
+  
+/******************测试样式********************/
+
+
+

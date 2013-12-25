@@ -1,0 +1,83 @@
+﻿*{margin:0px; padding:0px;}
+#allPage{width:950px;border:1px solid #373737;position:relative; margin:2px auto; font-size:13px;}
+
+/*母板页样式*/
+
+/*网页内容首部导航信息*/	
+#allPage #pageHead{border-bottom:1px solid;height:167px;background-image:url(../../image/banner4.jpg); background-repeat:no-repeat;}
+
+#allPage #contentHead{ height:20px;border-bottom:1px solid gray; margin-bottom:8px; background-image:url(../image/admin.gif); background-position:left top; background-repeat:no-repeat;}
+#allPage #contentHead #headText{ margin:2px 2px 2px 20px; }
+/*页面样式*/
+#adminPage {margin:2px 0px 0px 2px;}
+#adminPage #left{ float:left; border:1px solid #cccccc; min-width:150px;}
+#adminPage #left #navigator{ line-height:30px; padding:0px 0px 0px 10px;}
+#adminPage #left #leftTitle{background-image:url(../image/head.gif); background-repeat:repeat-x; background-position:top left; padding:8px 0px 8px 30px;}
+#adminPage #left #navigator a{ text-decoration:none;}
+#adminPage #left #navigator a:hover{ text-decoration:underline; color:Red;}
+#adminPage #left #navigator .childNavigator{line-height:25px; padding:0px 0px 0px 20px; }
+#adminPage #right{ margin:0px 2px 0px 1px; float:right; border:1px solid #cccccc; width:750px;}
+
+#contentPage{ float:right; width:790px; border:1px solid #cccccc; font-size:13px;}
+#contentPage #contentTitle{ height:25px; width:100%; background-image:url(../../image/head.gif); background-repeat:repeat; background-position:left;}
+
+
+/*添加板块用户控件样式*/
+#classTable{ margin-top:10px;}
+#classTable td{border:1px solid; margin:0px;}
+#classTable .inputTextBox{ width:100%; border:0px; overflow:auto;}
+#classTable .titleTD{ font-weight:bolder;}
+#classTable .inputTD{ width:200px;}
+#classTable .inputTD:hover{ border:1px solid red;}
+.radioClassImg{}
+/*版主查看文章样式*/
+#articleBlock{height:auto;margin-bottom:10px; position:relative;}
+
+.ArticleItem{font-size:12px;padding:5px;border-bottom:1px solid;border-bottom-color:#cdcdcd;height:40px;width:98%;display:block;position:relative;}
+
+.ArticleItem .title a{color:#000000;text-decoration:none;}
+
+.articleBlockTitle{ border-bottom:1px solid #cccccc; padding:5px;padding-right:30px;font-size:12px;color:#000000;width:100%;height:20px;background-image:url(../../image/headdd.gif); background-repeat:repeat; background-position:left;}
+
+.articleBlockTitle #subject{float:left;padding:2px 0px 0px 10px; display:inline;}
+
+.articleBlockTitle #TitleWriter{margin:-18px 0px 0px 400px; margin-left:50%; clear:both;}
+
+.articleBlockTitle #operateText{margin:-13px 0px 0px 600px; margin-left:80%; clear:both;}
+
+.ArticleItem .title a:hover{color:#00eeff;}
+
+.ArticleItem .replyData{margin:-13px 0px 0px 460px; clear:both;}
+
+.ArticleItem .userData{margin:-40px 0px 0px 80px; clear:both;padding:10px 10px;}
+
+.ArticleItem .operateButton{margin:-30px 0px 0px 560px; margin-left:74%; padding:0px 0px 10px 0px; clear:both;}
+
+.ArticleItem .operateButton a{ text-decoration:none;}
+.ArticleItem .operateButton a:hover{ text-decoration:underline; color:Red;}
+
+.ArticleItem .ArticleSubject{float:left; margin:10px 0px 0px 0px;}
+
+.ArticleItem .userData .userName{display:block;font-size:10px;}
+
+.ArticleItem .userData .userName a:hover{text-decoration:underline;}
+
+.ArticleItem .userData .userName a{text-decoration:none;}
+	
+.ArticleItem .userData .date{font-size:10px;}
+
+.viewUserData hr{ color:#373737;}
+.viewUserData table{ margin:2px 0px 2px 0px; line-height:30px; font-size:13px; width:30%;}
+/*页脚部分*/
+#footer{clear:both;padding:4px 0px;text-align:center; margin:10px auto; height:80px;}
+#footer ul li{list-style:none;display:inline;padding:3px 8px 2px 8px;border-right:1px solid;}
+#footer ul #last{border:0px;}
+#footer ul li a:hover{color:#FF0000;}
+#footer #we{margin-top:10px;}
+/*分页样式*/
+.pageFoot{ padding-bottom:15px;}
+.pageFoot .pageNumber{margin-bottom:10px; float:right; display:block; padding:8px;}
+.pageFoot .pageNumber span{border:1px solid #bfbfbf;padding:4px 8px; background-color:#efefef; margin-right:2px;}
+.pageFoot .pageNumber span a{font-size:15px; text-decoration:none; font-weight:bolder;}
+.pageFoot .pageNumber span:hover{border:1px solid #000099;}
+.pageFoot .operation{margin:5px 0px -5px 10px;}

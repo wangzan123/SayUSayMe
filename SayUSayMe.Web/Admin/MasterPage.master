@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" EnableTheming="true"%>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>你说我说技术交流平台后台管理</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="Css/AllPage.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="allPage">
+            <div id="pageHead"></div>
+            <div id="contentHead">
+                <div id="headText">尊敬的<b style="color:Red"><span id="helloText"></span></div>
+            </div>
+            <div id="pageContent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    <asp:Literal ID="script" runat="server"></asp:Literal>
+    </form>
+</body>
+</html>
+

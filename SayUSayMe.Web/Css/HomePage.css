@@ -1,0 +1,266 @@
+﻿*
+{
+	margin:0px;
+	padding:0px;
+     
+}
+body 
+{
+	background-color:#bebebe;
+/*	background-image:url(../image/header.gif);*/
+	}
+
+a
+{
+	text-decoration:none;
+	color:Black;
+}
+
+#allPage
+{
+	margin:2px auto;
+	width:850px;
+	border:2px solid;
+	}
+	
+#allPage #showMessages
+{
+	height:30px;
+	border:1px solid;
+	}
+
+#allPage #head
+{
+	border-bottom:1px solid;
+	height:150px;
+	background-image:url(../image/header.gif);
+	background-repeat:repeat-x;
+	position:relative;
+	background-position:top;
+	}
+	
+#allPage #head #logoPic
+{
+	margin:0px;
+	padding:0px;
+	bottom:0px;
+	left:0px;
+	}
+
+/*显示新闻图片和最新帖子、新闻模块*/	
+#page #container #newsShow
+{
+	height:380px;
+	margin:5px;
+	}
+
+#page #container #newsShow #headTitle
+{
+	font-size:13px;
+	font-weight:bold;
+	}
+	
+#page #container #newsShow #newShowTitle
+{
+	background-repeat:repeat-x;
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+	
+#page #container #newsShow #flashPic
+{
+	margin:10px;
+	width:240px;
+	float:left;
+	height:320px;
+	}
+	
+#page #container #newsShow #newNote
+{
+	width:560px;
+	float:right;
+	margin:10px 10px 10px 0px;
+	height:320px;
+	position:relative;
+	}
+	
+#page #container #newsShow #newNote #newArticle span
+{
+	float:left;
+	top:0px;
+	left:0px;
+	position:relative;
+	}
+
+/*计算机编程问题模块*/
+#page #container #programDesign
+{
+	height:150px;
+	border:1px solid;
+	margin:5px;
+	}
+#page #container #programDesign #programDesignTitle
+{
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+
+/*linux专区*/
+#page #container #linuxLearning
+{
+	height:150px;
+	border:1px solid;
+	margin:5px;
+	}
+
+#page #container #linuxLearning #linuxLearningTitle
+{
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+
+/*创意空间模块*/
+#page #container #artDesign
+{
+	height:150px;
+	border:1px solid;
+	margin:5px;
+	}
+#page #container #artDesign #artDesignTitle
+{
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+	
+/*资源共享*/
+#page #container #resourceShare
+{
+	height:150px;
+	border:1px solid;
+	margin:5px;
+	}
+
+#page #container #resourceShare #resourceShareTitle
+{
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+
+/*网站设计*/
+
+#page #container #webDesign
+{
+	height:150px;
+	border:1px solid;
+	margin:5px;
+	}
+
+#page #container #webDesign #webDesignTitle
+{
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+
+/*问题故障*/
+#page #container #computerProblem
+{
+	height:150px;
+	border:1px solid;
+	margin:5px;
+	}
+
+#page #container #computerProblemTitle
+{
+	margin:5px 10px;
+	border-bottom:1px solid;
+	background-color:Blue;
+	}
+	
+
+
+.list a
+{
+	float:left;
+	color:Red;
+	margin:20px;
+	}
+	
+
+/*分类图片的样式*/	
+.imgPlace
+{
+	float:left;
+	}
+
+/*分类描述的字体样式*/
+.description
+{
+	margin:0px;
+	padding:2px;
+	}
+
+.description #title
+{
+	font-size:13px;
+	font-weight:bold;
+	color:Black;
+	}
+
+.description span
+{
+	font-size:11px;
+	display:block;
+	color:#8e8e8e;
+	}
+
+/*每个分类的大块样式*/
+.catalogBlock
+{
+	margin:15px 10px;
+	}
+/*每一个块的标题样式*/
+.title
+{
+	color:#00cc55;
+	}
+	
+.title a
+{
+	text-decoration:none;
+	font-weight:bold;
+	color:#ffffff;
+	font-size:13px;
+	}
+	
+.title a:hover
+{
+	text-decoration:underline;
+	}
+.WebBlock
+{
+	padding:8px 4px;
+	}
+
+.newsItem
+{
+	font-size:12px;
+	margin:8px 0px;
+	padding:4px 0px;
+	}
+.newsItem a
+{
+	text-decoration:none;
+	border-bottom:1px;
+	border-bottom-style:dashed;
+	}
+
+.newsItem a:hover
+{
+	text-decoration:underline;
+	}

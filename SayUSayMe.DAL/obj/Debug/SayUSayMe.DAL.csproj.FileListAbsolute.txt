@@ -1,0 +1,14 @@
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\obj\Debug\SayUSayMe.DAL.csprojResolveAssemblyReference.cache
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.DAL.dll
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.DAL.pdb
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\obj\Debug\SayUSayMe.DAL.dll
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\obj\Debug\SayUSayMe.DAL.pdb
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.Model.dll
+F:\Design\A案例\项目设计\论坛项目参考\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.Model.pdb
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.DAL.dll
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.DAL.pdb
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.Model.dll
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\bin\Debug\SayUSayMe.Model.pdb
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\obj\Debug\SayUSayMe.DAL.csprojResolveAssemblyReference.cache
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\obj\Debug\SayUSayMe.DAL.dll
+F:\Design\A案例\综合项目设计\毕业设计\项目各个版本\SayUSayMe\SayUSayMe\SayUSayMe.DAL\obj\Debug\SayUSayMe.DAL.pdb

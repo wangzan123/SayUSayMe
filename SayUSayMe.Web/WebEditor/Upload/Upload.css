@@ -1,0 +1,42 @@
+﻿body {font-family:"宋体", Arial; margin:0; padding:0; font-size:12px; color:#16387C;text-align: center;}
+div,form,img,ul,ol,li,dl,dt,dd,p {margin: 0; padding: 0; border: 0;}
+ul{list-style-type:none}
+
+h1,h2,h3,h4,h5,h6,input {margin:0; padding:0;}
+table,td,tr,th{ font-size:12px;}
+
+/* ========== 链接颜色 ====== */
+
+a:link {color:#16387C;text-decoration:none }
+a:visited { color:#16387C;text-decoration:none}
+a:hover {color:#FF6600;text-decoration:underline}
+a:active { color: #FF6600;text-decoration:none}
+.title a{blur:expression(this.onFocus=this.blur());}
+/* ========== 字体属性 ====== */
+.cRed,a.cRed:link,a.cRed:visited{ color:Red; }
+.cGreen,a.cGreen:link,a.cGreen:visited{ color:Green; }
+
+
+#allpage{overflow:inherit; width:450px; background:#EBF0F4;z-index:1; position:relative;z-index:200;}
+/*检索或设置对象的行高。即字体最底端与字体内部顶端之间的距离。行高是字体下延与字体内部高度的顶端之间的距离。
+为负值的行高可用来实现阴影效果。假如一个格式化的行包括不止一个对象，则最大行高会被应用。在这种情况下，
+此属性不可以为负值。此属性对于 currentStyle 对象而言是只读的。对于其他对象而言是可读写的。对应的脚本特性为 lineHeight 。 */
+
+#allpage .title .tabTitle{background-image:url(pic/sheet_active.gif);width:105px; line-height:35px; height:35px; cursor:pointer; float:left; border:none; font-size:13px; font-weight:bold;}
+#allpage .title .tabTitle span{ margin-top:6px; }
+#allpage .content{clear:both; border:solid 1px #8EBAE6; border-top:none; padding-top:4px;padding-bottom:5px!important; padding-bottom:4px; background:white; display:block; margin-right:1px; _height:296px; min-height:296px;}
+
+
+/*域*/
+fieldset{ margin:20px; padding:10px; line-height:22px; border:solid 1px #8EBAE6; text-align:left}
+legend{font-weight:bold}
+
+/*提示信息*/
+.messageList{list-style-type:decimal; text-indent:2pc}
+
+/*button按钮特效*/
+.btn{text-align:center;font-size:12px;	line-height:22px;cursor:pointer;height: 22px; padding:0px; margin:0px; display:inherit;}
+.btn-center{display:block; margin:0px auto;}
+.over{color: #ff0000;border:solid 1px #ff787e; background-image: url(skin/btn_active.gif);font-weight:bold;}
+.out {color: #000000;border:solid 1px #586b7a; background-image: url(skin/btn_noactive.gif);}
+.btn-split{float:left;width:20px;height:25px; display:block}

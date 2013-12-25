@@ -1,0 +1,15 @@
+﻿*{ margin:0px; padding:0px;}
+#applyContent{ position:relative; font-size:15px;}
+.title{ padding:5px; background-color:Green;}
+.title1{ position:relative;  left:20px;}
+.title2{ position:relative;  left:180px;}
+.title3{ position:relative;  left:480px;}
+.dataItem{ border-bottom:1px solid green; padding:10px 0px 6px 0px;}
+.dataTitle{position:absolute; left:20px;}
+.dataTime{position:absolute; left:220px;}
+.operateButton{ position:relative; left:390px;}
+.operateButton a{ text-decoration:none;}
+.operateButton a:hover{ text-decoration:underline; color:Red;}
+
+.applyText{ border:1px solid red; padding:10px 10px 20px 20px;}
+.userData{border:1px solid red; padding:10px 10px 20px 20px;}

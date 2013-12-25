@@ -1,0 +1,7 @@
+﻿#userAllPage{margin:5px auto; position:relative; width:950px; padding:0px 0px 10px 0px; font-size:13px; border:1px solid #009900; border-bottom:0px;}
+#userAllPage #userHead{border:1px 0px;border-style:solid; position:relative; margin:0px auto; text-align:center; height:30px;
+                       background-image:url(../../image/userControl/StylePic/nav_bg3.gif); background-repeat:repeat-x;}
+#userAllPage #userHead a{margin:8px 35px 10px 25px; float:left; color:Black; text-decoration:none; font-weight:bolder;}
+#userAllPage #userHead a:hover{color:White; text-decoration:underline;}
+
+                  

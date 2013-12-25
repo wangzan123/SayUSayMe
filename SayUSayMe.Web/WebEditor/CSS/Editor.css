@@ -1,0 +1,62 @@
+﻿/*全局css定义*/
+body{font-family:"宋体", Arial; margin:0; padding:0;font-size:12px; text-align:left;}
+
+/*编辑器工具栏*/
+.toolbar{width:99%; height:26px; line-height:26px; padding:2px; clear:both; background:url(Pic/toolbar_bg.gif) repeat-x; z-index:1; position:relative;margin:0px auto;}
+.toolbar a{background:url(Pic/toolbar.gif) no-repeat; display:block; height:22px;width:25px;  margin-right:1px; padding:1px; float:left;}
+.toolbar a:hover{ background-color:#eef7ff; padding:0px; border:1px solid #71c3f2;}
+.toolbar b{width:1px; background:#cccccc; margin:4px; height:16px; display:block; float:left}
+
+	.toolbar .face{background-position:-329px}
+	.toolbar .image{background-position:-378px}
+	.toolbar .family{background-position:-4px}
+	.toolbar .fontsize{background-position:-34px}
+	.toolbar .color{background-position:-65px}
+	.toolbar .light{background-position:-92px}
+	.toolbar .FontBold{background-position:-122px}
+	.toolbar .FontItalic{background-position:-142px}
+	.toolbar .FontUnderline{background-position:-165px}
+	.toolbar .RemoveFormat{background-position:-187px}
+	.toolbar .left{background-position:-212px}
+	.toolbar .center{background-position:-234px}
+	.toolbar .right{background-position:-256px}
+.toolbar .backcolor{background-position:-617px}
+/*编辑器*/	
+.editor{width:100%; border:solid 1px #cccccc; margin:1px auto;}
+
+
+/*弹出窗口位置*/
+#_menuPoput{ position:relative; top:0px;z-index:100;height:0px;}
+
+.transparent{filter: Alpha(Opacity=90);-moz-opacity:0.9;opacity:0.9;}
+#_menuPoput{ position:relative; top:0px;z-index:100;height:0px;}
+#_menuPoput .menu{ position:absolute; width:150px; list-style:none; margin:0px; padding:0px;  text-align:left; float:left; border:solid 1px #71c3f2; background:#eef7ff;}
+#_menuPoput .menu li{}
+#_menuPoput .menu a{width:100%; height:100%; line-height:100%; display:block; color:#366eae; text-indent:1pc; padding:8px 0px 8px 0px; text-decoration:none}
+#_menuPoput .menu a:hover{background:#71c3f2; color:White}
+
+/*调色板*/
+/*******************************************
+所有浏览器 通用 height: 100px; 
+IE6 专用 _height: 100px; 
+IE7 专用 *+height: 100px;
+IE6、IE7 共用 *height: 100px;
+IE7、FF 共用 height: 100px !important;
+********************************************
+border-collapse:
+separate  :　 默认值。边框独立（标准HTML） 
+collapse  :　 相邻边被合并 
+********************************************/
+#_menuPoput .palette{width:200px; height:142px;*height:148px;padding:5px 2px 2px 2px; display:block; z-index:101;top:1px; left:200px;position:absolute; border:solid 1px #71c3f2; background:#eef7ff;}
+#_menuPoput .palette table{clear:both; margin-top:1px; width:200px; }
+#_menuPoput .palette td{width:10px; height:10px; cursor:pointer}
+
+/*表情*/
+#_menuPoput .face{width:300px;padding:5px 2px 2px 2px;z-index:101;top:1px; position:absolute; border:solid 1px #71c3f2; background:#eef7ff;cursor:pointer}
+#_menuPoput .face ul{list-style-type:none; width:100%; height:100%; margin:0px auto;}
+#_menuPoput .face li{float:left; display:block; width:24px; height:24px;margin:3px;}
+#_menuPoput .face li a{width:auto;height:auto;}
+#_menuPoput .face li a:hover{background:#0099ff;}
+#_menuPoput .face img{width:24px; height:24px; border:none; }
+
+#_menuPoput .upload{width:450px; height:342px; padding:5px 2px 2px 2px;z-index:101;top:1px; position:absolute; border:solid 1px #71c3f2; background:#ebf0f4;cursor:pointer}

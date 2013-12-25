@@ -1,0 +1,315 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register TagPrefix="cc1" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit, Version=3.0.20229.20843, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e" %>
+
+<!DOCTYPE html>
+<html>
+    <head runat="server">
+          <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+        <meta charset="UTF-8">
+        <title>你说我说技术交流平台</title>
+        <link rel="stylesheet" href="Css/style.css" type="text/css">
+            <!-- 引用样式文件-->
+    <link  type="text/css" href="App_Themes/mainTheme/HomePage.css" rel="Stylesheet" />
+    <link type="text/css" href="WebEditor/CSS/Editor.css" rel="Stylesheet" />
+    <link  href="Css/PopulDiv.css" type="text/css" rel="Stylesheet" />
+    <!-- 引用JS文件-->
+    <script type="text/javascript" src="JS/jquery-1.2.6.min.js"></script>
+    </head>
+<body runat="server">
+	<div id="header">
+		<div>
+			<a href="moban/fwst5_paintrepublic/index.html" class="logo"><img src="images/logo.png" alt=""></a>
+			<ul>
+				<li class="selected">
+					<a href="Default.aspx">首页</a>
+				</li>
+				<li>
+					<a href="NewsManage/news/datagrid/MainNews.aspx">微新闻</a>
+				</li>
+				<li>
+					<a href="NewsManage/news/datagrid/ManageNews.aspx">共享微新闻</a>
+				</li>
+				<li>
+					<a href="EditUserDetails.aspx">修改个人信息</a>
+				</li>
+				<li>
+					<a href="About.aspx">关于我们</a>
+				</li>
+				<li>
+					<a href="Contact.aspx">联系我们</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+    <div id="body">
+        <form id="form1" runat="server" enctype="multipart/form-data">
+        <!-- 引用ajax必须引入ScriptManager，并且一个页面只能有一个-->
+        <!-- 引用web服务-->
+    <asp:ScriptManager  runat="server" ID="ScriptManager1">
+        <Services>
+  <asp:ServiceReference Path="~/WebService.asmx" />
+        </Services>
+    </asp:ScriptManager>                                    
+    
+    <div id="allPage">
+        <div id="pageHead">
+            
+        </div>
+         <div id="contentHead" >
+            <div id="headText"><b>你说我说技术论坛</b>&nbsp;»&nbsp;<a href="Default.aspx">首页</a><asp:Literal runat="server" ID="url"></asp:Literal>
+            </div>
+            
+         </div>
+         <div id="advertisement"></div>
+         
+         <div id="showMessages">
+            <div id="operation"><a href="javascript:" onclick="check()"><img src="image/post.gif" style="border:0px;" alt="发表新帖"/></a>
+                <div id="operationText"><div id="text" style="display:none;">你可以<a href="javascript:" onclick="setUrl('Register.aspx','register')" id="register">注册</a>一个帐号，并以此
+                    <a href="javascript:" onclick="setUrl('Login.aspx','login')" id="login">登录</a>，以浏览更多精彩内容，并随时发布观点，与大家交流
+                </div>
+                </div>
+                <div id="suggestion">
+                        <asp:TextBox runat="server" ID="txtSearch" style="border:1px solid black; width:200px; height:19px;"></asp:TextBox>
+                        <asp:Button runat="server" ID="btnSearch" Text="搜索" OnClick="btnSearchClick" OnClientClick="return checkSearchContent()"/><asp:CheckBox
+                            ID="CB_Search" runat="server" />全文检索
+                        <cc1:AutoCompleteExtender ID="AutoCompleteExtender1" runat="server" CompletionListCssClass="suggestionDIV"
+                         TargetControlID="txtSearch" CompletionInterval="100" MinimumPrefixLength="1"
+                          ServicePath="~/WebService.asmx" ServiceMethod="GetCompleteData">
+                        </cc1:AutoCompleteExtender>
+                </div>
+            </div>
+           
+         </div>
+         <div id="pageContent">
+                 <!--内容开始-->
+
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <!--内容结束-->
+         </div>
+    </div>
+
+     
+    </form>
+    <div id="popupContact">   
+        <div id="divTitle" style="position: relative;
+	                            border-bottom: 1px solid #cccccc;
+	                            padding: 5px 0px 5px 0px;
+	                            top: 0px;
+	                            left: 0px;
+	                            text-align: center;
+	                            width: 100%;
+	                            font-size: 20px;
+	                            background-repeat: repeat-x;
+	                            background-position: left top;
+	                            background-color: #000000;
+	                            border-bottom-color: #FFFFFF;
+	                            color: #FFFFFF;">
+	     </div>  
+        <a id="popupContactClose" title="关闭">关闭</a>
+        <div style="clear:both;"></div> 
+        <iframe id="ShowID" style="border:0px; width:100%; height:80%; overflow:hidden; z-index:-1px;" frameborder="0" scrolling="no" ></iframe>
+    </div>   
+    <div id="backgroundPopup"></div>  
+    <asp:Literal runat="server" ID="script"></asp:Literal>
+    
+  
+    </div>
+	<div id="footer">
+		<div>
+		<%--	<ul class="contact">
+				<li>
+					Paint Republic
+				</li>
+				<li>
+					250 Lorem Ipsum Street
+				</li>
+				<li>
+					Joafanr, Caknan 109935
+				</li>
+				<li>
+					Kiangb
+				</li>
+			</ul>--%>
+	
+		</div>
+		<p>
+			Copyright &copy; 2013. All Rights Reserved
+		</p>
+	</div>
+</body>
+</html>
+        
+
+<script type="text/javascript">
+
+    function checkSearchContent() {
+
+        var sbtn = document.getElementById('<%=txtSearch.ClientID %>');
+    var ss = '<%=Session["userName"]%>';
+    if (!ss) {
+        alert("请登录后再搜索！");
+        return false;
+    }
+
+    if (sbtn.value == "") {
+        alert('搜索内容为空！请返回');
+        return false;
+    }
+    else
+        return true;
+}
+
+//设置弹出框的url和类型
+function setUrl(url, type) {
+    if (type == 'register') {
+        //alert("seturl");
+        document.getElementById("divTitle").innerHTML = '欢迎您注册';
+        document.getElementById("ShowID").src = url;
+    }
+    else {
+        document.getElementById("divTitle").innerHTML = '欢迎您登陆';
+        document.getElementById("ShowID").src = url;
+    }
+
+}
+
+//初始化：是否开启DIV弹出窗口功能
+//0 表示开启; 1 表示不开启;
+var popupStatus = 0;
+
+//使用Jquery加载弹窗效果
+function loadPopup() {
+    //仅在开启标志popupStatus为0的情况下加载   
+    if (popupStatus == 0) {
+        $("#backgroundPopup").css({
+            "opacity": "0.5"
+        });
+        //淡入函数
+        $("#backgroundPopup").fadeIn("slow");
+        $("#popupContact").fadeIn("slow");
+        popupStatus = 1;
+    }
+}
+//使用Jquery去除弹窗效果  
+function disablePopup() {
+    //仅在开启标志popupStatus为1的情况下去除 
+    if (popupStatus == 1) {
+        //淡出函数
+        $("#backgroundPopup").fadeOut("slow");
+        $("#popupContact").fadeOut("slow");
+        popupStatus = 0;
+        this.location = "<%# Request.Url %>";//重新加载当前页实现自动刷新效果
+    }
+}
+//将弹出窗口定位在屏幕的中央 
+function centerPopup() {
+    //获取窗体区域参数
+    var windowWidth = document.documentElement.clientWidth;     //可见区域宽度
+    var windowHeight = document.documentElement.clientHeight;       //可见区域高度
+    var popupHeight = $("#popupContact").height();      //弹窗高度
+    var popupWidth = $("#popupContact").width();        //弹窗宽度
+    //居中设置    
+    $("#popupContact").css({
+        "position": "absolute",
+        "top": windowHeight / 2 - popupHeight / 2,
+        "left": windowWidth / 2 - popupWidth / 2
+    });
+
+    //以下代码仅在IE6下有效 
+    $("#backgroundPopup").css({
+        "height": windowHeight
+    });
+}
+//加载完毕后开始执行
+$(document).ready(function () {
+
+
+    //注册按钮点击时间 
+    $("#register").click(function () {
+
+        //调用函数居中窗口 
+        centerPopup();
+        //调用函数加载窗口 
+        loadPopup();
+    });
+
+    //登录按钮
+    $("#login").click(function () {
+        centerPopup();
+        //调用函数加载窗口 
+        loadPopup();
+    });//登录按钮
+
+    //关闭弹出窗口    
+    //点击"X"所触发的事件 
+    $("#popupContactClose").click(function () {
+        disablePopup();
+    });
+
+    //键盘按下ESC时关闭窗口!  keycode   27 = Escape Escape
+    $(document).keypress(function (e) {
+        if (e.keyCode == 27 && popupStatus == 1) {
+            disablePopup();
+        }
+    });//结束ready函数  
+});
+
+//防止用户登录之后按后退按钮，文档加载后就查看是否已经登录
+window.onload = function () {
+    WebService.CheckLoginState(onCompleteCheck, onError);
+    //检查是否是登陆状态,根据是否登录改变状态信息
+    function onCompleteCheck(result) {
+        if (result != "") {
+            var obj = document.getElementById('operationText');
+            obj.innerHTML = '欢迎您:<b>' + result + '</b>&nbsp;[<a href="javascript:" onclick="loginOut()">退出登录</a>]&nbsp;&nbsp;<a href="UserControl.aspx" target="_blank">[个人中心]</a>';
+            WebService.CheckUserType(onSuccess);
+            function onSuccess(result) {
+                //result<0为普通用户 因为普通用户定义为-1，版主为>0,管理员为0
+                if (result < 0)
+                    return;
+                else
+                    obj.innerHTML += '&nbsp;&nbsp;<a href="Admin/Default.aspx" target="_blank">[后台管理]</a>';
+            }
+        }
+        else {
+            document.getElementById('text').style.display = '';
+        }
+    }
+}
+//检查登录转态
+function check() {
+    //alert("xxxxxxxxx");
+    WebService.CheckUserState(onSuccess, onError);
+    function onSuccess(result) {
+        //      alert(result);
+        if (result == "fobidden") {
+            alert("你已被禁言，无法发帖！");
+            return;
+        }
+        else if (result == "") {
+            alert("请先登录再发表");
+            return;
+        }
+        else
+            location = "AddArticle.aspx";
+
+
+    }
+
+}
+//退出登录,通过web服务，退出登录情况
+function loginOut() {
+    WebService.LoginOut(onCompleteLoginOut, onError);
+
+    function onCompleteLoginOut(result) {
+        location = "Default.aspx";
+    }
+
+}
+function onError(result) {
+    ///web服务回调函数
+}
+</script>
